@@ -7,9 +7,9 @@ client.on(`message`, message => {
     if (message.author.bot) return; 
     if (!message.guild) return; 
     if (message.guild) {
-        const channel = client.channels.cache.get('828760308398948384');
+        const channel = client.channels.cache.get('LOG_CHANNEL');
         const embed = new Discord.MessageEmbed() 
-            .setTitle("Peacekeeper Message Log")
+            .setTitle("BOT Message Log")
             .setDescription(`
                  __**[Message]**__
                  ${message.content}
